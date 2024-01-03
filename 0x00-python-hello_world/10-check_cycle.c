@@ -6,7 +6,7 @@
  * Return: 0 if there is no cycle, else 1
  */
 
-int check_cycle(list_int_t *list)
+int check_cycle(listint_t *list)
 {
 	listint_t *node_1, *node_2;
 
