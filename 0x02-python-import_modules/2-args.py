@@ -10,7 +10,7 @@ if __name__ == "__main__":
         print("Zero arguments.")
     else:
         if arg_count == 1:
-            print("{} argument:\n{}: {}".format(arg_count, arg_count, args[0]))
+            print("{} argument:\n{}: {}".format(arg_count, arg_count, arg[0]))
         else:
             print("{} arguments:".format(arg_count))
             for i in range(arg_count):
