@@ -3,13 +3,13 @@
 from sys import argv
 
 if __name__ == "__main__":
-    counter = len(argv) - 1
+    arg_count = len(argv) - 1
 
-    if counter == 0:
-        print("0 arguements.")
-    elif counter == 1:
-        print("1 arguements:")
+    if arg_count < 1:
+        print("{} arguments.".format(arg_count))
+    elif arg_count == 1:
+        print("{} argument:".format(arg_count))
     else:
-        print("{} arguements:".format(counter))
+        print("{} arguments:".format(arg_count))
     for i in range(counter):
-        print("{}: {}".format(i + 1, argv[i + 1]))
+        print("{}: {:s}".format(i + 1, argv[i + 1]))
