@@ -3,7 +3,7 @@
 from sys import argv
 
 if __name__ == "__main__":
-    counter = len(sys.argv) - 1
+    counter = len(argv) - 1
 
     if counter == 0:
         print("0 arguements.")
@@ -12,4 +12,4 @@ if __name__ == "__main__":
     else:
         print("{} arguements:".format(counter))
     for i in range(counter):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+        print("{}: {}".format(i + 1, argv[i + 1]))
