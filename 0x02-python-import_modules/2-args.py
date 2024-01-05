@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-import argv from sys
+import sys
 
 if __name__ == "__main__":
-    arg = argv[1:]
+    arg = sys.argv[1:]
     arg_count = len(arg)
 
     if arg_count == 0:
