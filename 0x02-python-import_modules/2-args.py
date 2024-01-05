@@ -7,7 +7,7 @@ if __name__ == "__main__":
     arg_count = len(arg)
 
     if arg_count == 0:
-        print("0 arguments.")
+        print("Zero arguments.")
     else:
         if arg_count == 1:
             print("{} argument:\n{}: {}".format(arg_count, arg_count, arg[0]))
