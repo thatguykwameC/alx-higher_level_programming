@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-import argv from sys
+import sys
 
 if __name__ == "__main__":
-    arg = argv[1:]
+    arg = sys.argv[1:]
     arg_count = len(arg)
 
     if arg_count == 0:
-        print("Zero arguments.")
+        print("0 arguments.")
     else:
         if arg_count == 1:
             print("{} argument:\n{}: {}".format(arg_count, arg_count, arg[0]))
