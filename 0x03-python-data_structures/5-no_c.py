@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-def no_c(my_string):
-    for i in range(len(my_string)):
-        if my_string[i] != "c" and my_string[i] != 'C':
-            new_string += my_string[i]
-        return new_string
+def no_c(my_string) -> str:
+    """Removes 'c' and 'C' from a string"""
+    return "".join(char for char in my_string if char not in 'Cc')
