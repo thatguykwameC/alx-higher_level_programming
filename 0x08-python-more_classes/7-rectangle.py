@@ -85,14 +85,17 @@ class Rectangle:
         Returns a string representation of the rectangle with '#' characters.
         """
         str_rep = ""
+        symbol = self.print_symbol
 
         if self.__width == 0 or self.__height == 0:
             return str_rep
 
         for i in range(self.__height):
-            str_rep += '#' * self.__width + '\n'
+            str_rep += str(symbol) * self.__width
+            if (i != self.__height - 1):
+                str_rep += '\n'
 
-        return str_rep.rstrip('\n')
+        return str_rep
 
     def __repr__(self):
         """
