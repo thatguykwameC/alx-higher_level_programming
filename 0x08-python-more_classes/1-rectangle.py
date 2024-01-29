@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""THis module defines a class Rectangle"""
+"""This module defines a class Rectangle"""
 
 
 class Rectangle:
@@ -17,7 +17,7 @@ class Rectangle:
         """
         Retrieves the width of the Rectangle
 
-        Returns: THe width of the Rectangle
+        Returns: The width of the Rectangle
         """
         return self.__width
 
@@ -26,7 +26,7 @@ class Rectangle:
         """
         Sets and updates the width of the Rectangle
 
-        Args: Value - THe value for the width
+        Args: Value - The value for the width
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -50,7 +50,7 @@ class Rectangle:
         """
         Sets and updates the height of the Rectangle
 
-        Args: Value - THe value for the height
+        Args: Value - The value for the height
         """
         if not isinstance(value, int):
             raise TypeError("height  must be an integer")
