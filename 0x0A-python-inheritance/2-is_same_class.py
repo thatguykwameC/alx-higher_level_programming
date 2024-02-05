@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 A module that returns True if the object is exactly an
 instance of the specified class.
