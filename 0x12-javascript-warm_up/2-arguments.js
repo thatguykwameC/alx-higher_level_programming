@@ -2,10 +2,10 @@
 
 const lenArg = process.argv.length;
 
-if (lenArg <= 2) {
-  console.log('No arguement');
-} else if (lenArg === 3) {
+if (lenArg === 3) {
   console.log('Arguement found');
-} else {
+} else if (lenArg > 3) {
   console.log('Arguements found');
+} else {
+  console.log('No arguement');
 }
