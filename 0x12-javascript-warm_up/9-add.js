@@ -8,7 +8,7 @@ if (arrayLen === 2 || arrayLen === 3) {
   add(parseInt(process.argv[2]), parseInt(process.argv[3]));
 }
 
-function add(a, b) {
+function add (a, b) {
   const sum = a + b;
   console.log(sum);
 }
