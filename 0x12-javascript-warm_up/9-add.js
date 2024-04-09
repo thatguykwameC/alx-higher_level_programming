@@ -1,4 +1,5 @@
 #!/usr/bin/node
+
 const arrayLen = process.argv.length;
 
 if (arrayLen === 2 || arrayLen === 3) {
