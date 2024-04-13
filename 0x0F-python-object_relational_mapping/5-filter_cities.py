@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This script lists all cities from the database `hbtn_0e_4_usa`
+"""This script filtters all cities from the database `hbtn_0e_4_usa`
 based on the provided state name, taken as an arguement."""
 
 if __name__ == "__main__":
