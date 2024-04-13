@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-"""This script retrieves and displays all cities from the database
-`hbtn_0e_4_usa` along with their corresponding state names."""
+"""This script displays all cities from the database `hbtn_0e_4_usa`
+along with their corresponding state names."""
 
 if __name__ == "__main__":
     import sys
