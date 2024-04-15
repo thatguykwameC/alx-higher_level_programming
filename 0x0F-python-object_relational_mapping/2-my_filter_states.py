@@ -24,9 +24,10 @@ if __name__ == "__main__":
 
     query = """
         SELECT * FROM states
-        WHERE name LIKE BINARY %s
+        WHERE name LIKE BINARY '{}'
         ORDER BY states.id;
     """.format(state_name)
+
     db_cursor.execute(query)
 
     # Fetching all rows from the result set
