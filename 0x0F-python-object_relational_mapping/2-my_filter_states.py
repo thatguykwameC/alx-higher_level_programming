@@ -26,8 +26,8 @@ if __name__ == "__main__":
         SELECT * FROM states
         WHERE name LIKE BINARY %s
         ORDER BY states.id;
-    """
-    db_cursor.execute(query, (state_name,))
+    """.format(state_name)
+    db_cursor.execute(query)
 
     # Fetching all rows from the result set
     result_set = db_cursor.fetchall()
