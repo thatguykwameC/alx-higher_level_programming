@@ -5,14 +5,9 @@ sent in as arguments
 """
 
 import requests
-import sys
 from sys import argv, exit
 
 if __name__ == '__main__':
-
-    if len(argv) < 3:
-        print(f"Usage: {argv[0]} <repo> <owner>")
-        exit(1)
 
     url = f"https://api.github.com/repos/{argv[2]}/{argv[1]}/commits"
     response = requests.get(url)
