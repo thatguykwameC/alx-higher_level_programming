@@ -5,14 +5,20 @@ sent in as arguments
 """
 
 import requests
-from sys import argv
+import sys
+from sys import argv, exit
 
 if __name__ == '__main__':
 
     url = f"https://api.github.com/repos/{argv[2]}/{argv[1]}/commits"
     response = requests.get(url)
 
+    if response.status_code != 200:
+        print("Error: Not a valid repository")
+        exit(1)
+
     commits = response.json()[:10]
     for commit in commits:
-        print(commit.get('sha'), end=': ')
-        print(commit.get('commit').get('author').get('name'))
+        sha = commit['sha']
+        author = commit['commit']['author']['name']
+        print(f"{sha}: {author}")
