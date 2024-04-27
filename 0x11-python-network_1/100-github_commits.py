@@ -1,15 +1,12 @@
 #!/usr/bin/python3
-"""
-list 10 commits (from the most recent to oldest) of the repository and user
-sent in as arguments
-"""
+"""This script displays the last 10 commits from a GitHub repository."""
 
 import requests
 import sys
 
-if __name__ == '__main__':
-
-    if len(sys.argv) < 3:
+if __name__ == "__main__":
+    
+    if len(sys.argv) != 3:
         print(f"Usage: {sys.argv[0]} <repo> <owner>")
         sys.exit(1)
 
@@ -20,8 +17,8 @@ if __name__ == '__main__':
         print("Error: Not a valid repository")
         sys.exit(1)
 
-    commits = response.json()[:10]
-    for commit in commits:
+    top_10_commits = response.json()[:10]
+    for commit in top_10_commits:
         sha = commit['sha']
         author = commit['commit']['author']['name']
         print(f"{sha}: {author}")
